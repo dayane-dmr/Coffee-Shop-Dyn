@@ -52,6 +52,7 @@ section, main {
     background-color: var(--bg);
     border-bottom: var(--border);
     width: 100%;
+    align-items: center;
 }
 
 .header section {
