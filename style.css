@@ -61,9 +61,7 @@ section, main {
     position: relative;
 }
 
-.header section a img {
-    height: 6rem;
-}
+
 
 .header section nav a {
     margin: 1rem 2rem;
