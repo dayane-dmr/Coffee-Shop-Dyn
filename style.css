@@ -105,17 +105,17 @@ section, main {
 
 .content-box div{
     max-width: 60rem;
-    margin: 10vh 0;
+    margin: 20vh 0;
 }
 
 .content-box div h3{
     color: #fff;
-    font-size: 7rem;
+    font-size: 6rem;
     text-transform: uppercase;
 }
 
 .content-box div p{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: lighter;
     padding: 1rem 0;
@@ -144,7 +144,6 @@ section, main {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
     font-size: 4rem;
 }
 
@@ -153,7 +152,7 @@ section, main {
 }
 
 .about-background {
-    margin-top: 100px;
+    margin-top: 10px;
     background-image: url('./img/aboutCoffee.jpeg');
     background-size: cover;
     background-position: center;
