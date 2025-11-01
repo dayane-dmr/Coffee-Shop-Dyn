@@ -162,6 +162,7 @@ section, main {
     justify-content: center;
     padding: 2rem 2rem;
     min-height: 40rem;
+    max-height: 50rem;
     color: #fff;
     position: relative;
     border-radius: 1rem;
@@ -179,7 +180,7 @@ section, main {
 
 .about-container {
     position: relative;
-    max-width: 50rem;
+    max-width: 80rem;
     text-align: center;
     z-index: 2;
 }
@@ -191,8 +192,8 @@ section, main {
 
 .about-text p {
     margin-bottom: 1rem;
-    line-height: 1.6;
-    font-size: 4rem;
+
+    font-size: 2rem;
 }
 
 .button-link {
