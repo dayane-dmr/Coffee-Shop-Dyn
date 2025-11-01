@@ -152,7 +152,7 @@ section, main {
 }
 
 .about-background {
-    margin-top: 10px;
+    margin-top: 5px;
     background-image: url('./img/aboutCoffee.jpeg');
     background-size: cover;
     background-position: center;
@@ -160,8 +160,8 @@ section, main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
-    min-height: 55rem;
+    padding: 2rem 2rem;
+    min-height: 40rem;
     color: #fff;
     position: relative;
     border-radius: 1rem;
