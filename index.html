@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Coffee Shop Dyn</title>
 </head>
@@ -19,12 +19,12 @@
         <video src="./video/coffee.mp4" loop muted autoplay></video>
         <div class="mask"></div>
     </div>
-
+    
     <header class="header">
         <section>
             <h1 class="hidden">Header</h1>
             <a href="#"><img src="./img/logoCoffee.png" alt="Coffee shop logo" aria-hidden="true"></a>
-
+            
             <nav class="main-nav">
                 <h1 class="hidden">Navbar</h1>
                 <a href="#">Home</a>
@@ -34,8 +34,8 @@
             </nav>
         </section>
     </header>
-
-
+    
+    
     <main class="content-box">
         <div>
             <h3>Code with the best coffee in São Paulo</h3>
@@ -43,55 +43,55 @@
                 coffee. With a cozy atmosphere and comfortable spaces, we offer an ideal haven for programmers,
                 freelancers, and remote professionals who need an inspiring space to work. Come code, create, and
                 connect while enjoying the best coffee in the city!</p>
-            <a class="button-link" href="#" onclick="showModal()">Find Us on the Map</a>
-        </div>
-    </main>
-    <section class="about-section">
-        <h2 class="title-dual"><span>About</span> us</h2>
-        <div class="about-container">
-            <div class="about-image">
-                <img src="./img/aboutCoffee.jpeg" alt="A cup overflowing with coffee"
-                    title="A cup overflowing with coffee">
+                <a class="button-link" href="#" onclick="showModal()">Find Us on the Map</a>
             </div>
-            <div class="about-text">
-                <h3>What makes our coffee special</h3>
-                <p>
-                    Our special coffee is crafted from the finest beans sourced from sustainable farms around the world.
-                    Each cup is a unique blend, carefully roasted to perfection, highlighting rich flavors and aromatic
-                    notes. Whether you prefer a bold espresso or a smooth latte, our expert baristas are dedicated to
-                    creating an unforgettable coffee experience.
-                </p>
-                <p>
-                    Indulge in the warmth of our inviting atmosphere, where every sip tells a story of passion and
-                    dedication to the art of coffee.
-                </p>
-                <a class="button-link" onclick="showModalAboutUs()">Learn more</a>
+        </main>
+        <section class="about-section">
+            <h2 class="title-dual"><span>About</span> us</h2>
+            <div class="about">
+                <div class="about-background">
+                    <div class="about-container">
+                        <div class="about-text">
+                            <h3>What makes our coffee special</h3>
+                            <p>
+                                Our special coffee is crafted from the finest beans sourced from sustainable farms around the world.
+                                Each cup is a unique blend, carefully roasted to perfection, highlighting rich flavors and aromatic
+                                notes. Whether you prefer a bold espresso or a smooth latte, our expert baristas are dedicated to
+                                creating an unforgettable coffee experience.
+                            </p>
+                            <p>
+                                Indulge in the warmth of our inviting atmosphere, where every sip tells a story of passion and
+                                dedication to the art of coffee.
+                            </p>
+                            <a class="button-link" onclick="showModalAboutUs()">Learn more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <div class="modal">
-        <h3 class="title-dual">our <span>address</span></h3>
-        <iframe
+        </section>
+        <div class="modal">
+            <h3 class="title-dual">our <span>address</span></h3>
+            <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14817.300293023798!2d-49.619732153539616!3d-21.8063675083164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be467589002709%3A0x54c03e662abc324e!2sCafel%C3%A2ndia%2C%20SP%2C%2016500-000!5e0!3m2!1spt-BR!2sbr!4v1730480632228!5m2!1spt-BR!2sbr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="modal-mask" onclick="closeModal()"></div>
-
-    <div class="container-about-us">
-        <section class="modal-about-us">
-            <button class="close-button" onclick="closeModal()">X</button>
-            <h3>What Makes Our Coffee Special</h3>
-
-            <br>
-            Our coffee is a journey of dedication and passion that starts long before the beans ever reach your cup.
-            We
-            work with sustainable farms around the world to source the highest quality beans, prioritizing
-            eco-friendly
-            practices that respect the land and the farmers who cultivate it. Each bean is hand-selected to ensure
-            that
-            only the finest make it to our roasting process. We believe that coffee is not just a drink but an
-            experience, a blend of rich flavors and aromatic notes that awaken the senses and warm the soul.
+        </div>
+        <div class="modal-mask" onclick="closeModal()"></div>
+        
+        <div class="container-about-us">
+            <section class="modal-about-us">
+                <button class="close-button" onclick="closeModal()">X</button>
+                <h3>What Makes Our Coffee Special</h3>
+                
+                <br>
+                Our coffee is a journey of dedication and passion that starts long before the beans ever reach your cup.
+                We
+                work with sustainable farms around the world to source the highest quality beans, prioritizing
+                eco-friendly
+                practices that respect the land and the farmers who cultivate it. Each bean is hand-selected to ensure
+                that
+                only the finest make it to our roasting process. We believe that coffee is not just a drink but an
+                experience, a blend of rich flavors and aromatic notes that awaken the senses and warm the soul.
             </p>
             <br />
             <p>
@@ -116,11 +116,11 @@
                 with friends. We believe that every sip you take is part of a larger story—a story that celebrates both
                 the
                 art of coffee-making and the simple pleasures of life.</p>
-
-        </section>
-        <div class="modal-mask" onclick="closeModal()"></div>
-    </div>
-</body>
-<script src="script.js"></script>
-
-</html>
+                
+            </section>
+            <div class="modal-mask" onclick="closeModal()"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    
+    </html>

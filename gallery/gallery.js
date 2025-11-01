@@ -1,35 +1,25 @@
+const gallery = document.querySelector('.gallery');
 const controls = document.querySelectorAll('.control');
-
-let currentItem = 0;
 const items = document.querySelectorAll('.item');
 
+let currentItem = 0;
 const maxItems = items.length;
 
+function updateCarousel() {
+    const offset = -currentItem * 100; 
+    gallery.style.transform = `translateX(${offset}%)`;
+}
 
-controls.forEach((control) => {
-    control.addEventListener('click', () =>{
+controls.forEach(control => {
+    control.addEventListener('click', () => {
         const isLeft = control.classList.contains('left-arrow');
-
         if(isLeft){
-            currentItem -= 1;
+            currentItem = (currentItem - 1 + maxItems) % maxItems;
         } else {
-            currentItem += 1;
+            currentItem = (currentItem + 1) % maxItems;
         }
+        updateCarousel();
+    });
+});
 
-        if(currentItem >= maxItems){
-            currentItem = 0;
-        }
-        if(currentItem < 0){
-            currentItem = maxItems -1;
-        }
-        items.forEach(item => item.classList.remove('current-item'));
-
-        items[currentItem].scrollIntoView({
-            inline:'center',
-            behavior:'smooth',
-        });
-
-        items[currentItem].classList.add('current-item')
-
-    } )
-})
+updateCarousel();

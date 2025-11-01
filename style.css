@@ -48,17 +48,16 @@ section, main {
     top: 0;
     left: 0;
     z-index: 2;
+    height: 120px;
     background-color: var(--bg);
     border-bottom: var(--border);
-    width: 100vw;
+    width: 100%;
 }
 
 .header section {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 50px;
-    padding: 1.5rem 0;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -111,12 +110,12 @@ section, main {
 
 .content-box div h3{
     color: #fff;
-    font-size: 6rem;
+    font-size: 7rem;
     text-transform: uppercase;
 }
 
 .content-box div p{
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     font-weight: lighter;
     padding: 1rem 0;
@@ -130,7 +129,7 @@ section, main {
     margin-top: 2rem;
     font-size: 1.7rem;
     color: #fff;
-    padding: 1rem 3rem;
+    padding: 3rem 4rem;
     border-radius: 3px;
     border: none;
     transition: .3s ease-in;
@@ -153,10 +152,68 @@ section, main {
     color: var(--main-color);
 }
 
+.about-background {
+    margin-top: 100px;
+    background-image: url('./img/aboutCoffee.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    min-height: 55rem;
+    color: #fff;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;  
+}
+
+.about-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 1rem; 
+}
+
+.about-container {
+    position: relative;
+    max-width: 50rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 4rem;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #d3ad7f;
+    color: #010103;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #b58e67;
+}
+
 .about-section .about-container{
     display: flex;
     align-items: center;
-    background-color: var(--black);
     gap: 1.5rem;
     flex-wrap: wrap;
 }
@@ -165,23 +222,20 @@ section, main {
     flex: 1 1 45rem;
 }
 
-.about-section .about-container .about-image img{
-    width: 100%;
-}
 
-.about-section .about-container .about-text{
+
+.about-section .about-container {
     flex: 1 1 45rem;
     padding: 2rem;
 }
 
-.about-section .about-container .about-text h3{
+.about-section .about-container h3{
     font-size: 3rem;
     color: #fff;
 }
 
-.about-section .about-container .about-text p{
-    font-size: 1.5rem;
-    font-weight: lighter;
+.about-section .about-container p{
+    font-size: 2rem;
     color: #fff;
     line-height: 1.8;
     padding: 1rem 0;
@@ -228,14 +282,14 @@ section, main {
     border-radius: 10px;
     width: 70vw;
     height: auto;
-    font-weight: lighter;
     color: #fff;
     line-height: 1.8;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .modal-about-us h3{
     display: flex;
+    font-size: 5rem;
     justify-content: center;
 }
 
